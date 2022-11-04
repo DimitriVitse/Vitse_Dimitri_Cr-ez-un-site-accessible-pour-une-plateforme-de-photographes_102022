@@ -1,0 +1,84 @@
+@import url("loader.css");
+@import url("photographer.css");
+@import url("achievement.css");
+@import url("carousel.css");
+@import url("dropdown.css");
+
+*:focus {
+  outline: 4px dashed darkorange;
+}
+
+body {
+  font-family: "DM Sans", sans-serif;
+  margin: 0;
+  background: hsl(0, 0%, 96%);
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 90px;
+}
+
+h1 {
+  color: #d3573c;
+  font-size: 45px;
+}
+
+.logo {
+  height: 50px;
+  margin-left: 100px;
+}
+
+.photographer_section {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 70px;
+  margin-top: 100px;
+}
+
+.photographer_section article {
+  justify-self: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.photographer_section article h2 {
+  color: #d3573c;
+  font-size: 36px;
+  margin: 40px 0 0 0;
+}
+
+.photographer_section article img {
+  height: 200px;
+  width: 200px;
+  border-radius: 100%;
+  transition: all 500ms;
+  object-fit: cover;
+}
+
+.photographer_section article p {
+  line-height: 1.5;
+  text-align: center;
+  margin: 0;
+}
+
+.photographer_section article span {
+  color: #901c1c;
+  font-weight: 700;
+}
+
+.photographer_section article a {
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.photographer_section article a:hover>img {
+  transform: scale(1.2);
+}

@@ -1,0 +1,60 @@
+.achievements_section {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 70px;
+  margin: 120px;
+}
+
+.achievements_section article {
+  max-width: 350px;
+  background: white;
+  border-radius: 5px;
+  box-shadow: 0 0 4px 0 rgb(0 0 0 / 10%);
+  transition: all 500ms;
+}
+
+.achievements_section article:hover {
+  box-shadow: 10px 10px 20px 0 rgb(0 0 0 / 10%);
+}
+
+.achievements_section a {
+  cursor: pointer;
+}
+
+.achievements_section img {
+  height: 300px;
+  width: 350px;
+  border-radius: 5px 5px 0 0;
+  object-fit: cover;
+}
+
+.achievements_section video {
+  height: 300px;
+  width: 350px;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+.achievements_section p {
+  display: flex;
+  justify-content: space-between;
+  color: #901c1c;
+  font-size: 24px;
+  margin: 10px;
+}
+
+.achievements_section span {
+  display: flex;
+  align-items: center;
+}
+
+.achievements_section i {
+  padding: 5px;
+  transition: all 250ms;
+}
+
+.achievements_section i:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
