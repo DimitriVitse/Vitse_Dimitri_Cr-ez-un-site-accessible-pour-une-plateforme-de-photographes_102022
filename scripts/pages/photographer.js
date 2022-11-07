@@ -100,7 +100,7 @@ async function makeStickyAfterLike() {
     });
     photographer = { ...photographer, ...{ totalLikes: totalLikes } };
 
-    sticky.parentNode.removeChild($sticky);
+    sticky.parentNode.removeChild(sticky);
     makeSticky(photographer);
 }
 

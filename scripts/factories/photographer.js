@@ -11,7 +11,7 @@ function photographerFactory(data) {
     const photographerCard = `
     <a href="./photographer.html?id=${id}">
             <img 
-                alt="" 
+                alt="${name}" 
                 src="./assets/photographers/${portrait}"
             />
             <h2>${name}</h2>
